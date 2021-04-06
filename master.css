@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+.container {
+  background-color: #d6dbd7;
+
+  height: 100vh;
+  width: 100vw;
+}
+
 .sfondo-verde {
   background-color: #009788;
 
@@ -14,14 +21,9 @@
   width: 100vw;
 }
 
-.sfondo-grigio {
-  background-color: #d6dbd7;
-
-  height: 85vh;
-  width: 100vw;
-}
-
 .app-container {
+  display: flex;
+
   background-color: #f0f0f0;
 
   height: 95vh;
@@ -30,4 +32,153 @@
   position: absolute;
 
   margin: 2.5vh 10vw;
+}
+
+.sidebar {
+  display: inline-block;
+
+  height: auto;
+  width: 25vw;
+}
+
+/* SIDEBAR */
+
+.user {
+  height: 8vh;
+  width: auto;
+
+  background-color: #ededed;
+  color: #878785;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.user img {
+
+}
+
+.user i {
+  padding: 0 10px;
+}
+
+.avviso {
+  height: 8vh;
+  width: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #9ce1fe;
+}
+
+.avviso-image {
+  height: 50px;
+  width: 50px;
+
+  background-color: #ffffff;
+  color: #9ce1fe;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.cerca {
+  height: 5vh;
+  width: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.cerca i {
+  color: #e1dfe0;
+}
+
+.cerca input {
+  width: 70%;
+}
+
+.contatti {
+  height: 74vh;
+  width: auto;
+
+  background-color: #ffffff;
+}
+
+/* CHAT-WINDOW */
+
+.chat-window {
+  height: 95vh;
+  width: 55vw;
+
+  background-image: url("./img/mine.jpg");
+}
+
+.active-contact {
+  height: 8vh;
+  width: auto;
+
+  background-color: #ededed;
+  color: #878785;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.active-contact i {
+  padding: 0 10px;
+}
+
+.messages {
+  height: 79vh;
+  width: auto;
+}
+
+.write-message {
+  height: 8vh;
+  width: auto;
+
+  background-color: #ededed;
+  color: #878785;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.write-message input {
+  height: 4vh;
+  width: 70%;
+
+  border-radius: 20px;
+
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
 }
